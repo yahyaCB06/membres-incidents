@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.AddMembreController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="TOP_CENTER" prefHeight="37.0" prefWidth="326.0" text="Ajouter un nouveau membre">
+                    <font>
+                        <Font name="System Bold" size="19.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nom" prefHeight="25.0" prefWidth="507.0" promptText="Nom">
+                    <VBox.margin>
+                        <Insets left="150.0" right="150.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="prenom" layoutX="160.0" layoutY="87.0" prefHeight="25.0" prefWidth="507.0" promptText="Prenom">
+                    <VBox.margin>
+                        <Insets left="150.0" right="150.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="email" layoutX="10.0" layoutY="153.0" prefHeight="25.0" prefWidth="507.0" promptText="Email">
+                    <VBox.margin>
+                        <Insets left="150.0" right="150.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="phone" layoutX="10.0" layoutY="218.0" prefHeight="25.0" prefWidth="507.0" promptText="Phone">
+                    <VBox.margin>
+                        <Insets left="150.0" right="150.0" />
+                    </VBox.margin>
+                </TextField>
+                <Button mnemonicParsing="false" onMouseClicked="#insererAction" text="Inserer" />
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
